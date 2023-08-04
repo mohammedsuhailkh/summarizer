@@ -40,25 +40,25 @@
   height: fit-content;
   z-index: 3;
   width: 100%;
-  max-width: 640px;
+  max-width: 1140px;
   background-image: radial-gradient(
-      at 27% 37%,
-      hsla(215, 98%, 61%, 1) 0px,
+      at 77% 77%,
+      rgb(59, 0, 79) 0px,
       transparent 0%
     ),
-    radial-gradient(at 97% 21%, rgb(114, 254, 214) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, rgb(7, 110, 162) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, rgb(249, 168, 27) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, rgb(0, 204, 255) 0px, transparent 50%);
+    radial-gradient(at 97% 21%, rgb(0, 206, 148) 0px, transparent 70%),
+    radial-gradient(at 52% 99%, rgb(11, 0, 112) 0px, transparent 80%),
+    radial-gradient(at 10% 29%, rgb(115, 0, 255) 0px, transparent 60%),
+    radial-gradient(at 97% 96%, rgb(12, 0, 72) 0px, transparent 80%),
+    radial-gradient(at 33% 50%, rgb(0, 76, 255) 0px, transparent 70%),
+    radial-gradient(at 79% 53%, rgb(0, 204, 255) 0px, transparent 80%);
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   filter: blur(100px) saturate(150%);
   top: 80px;
-  opacity: 0.15;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 640px) {
@@ -111,4 +111,11 @@
 
 .summary_box {
   @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-4;
+}
+.btnHover{
+  transition: transform 0.3s ease;
+}
+.btnHover:hover{
+  color: green;
+  transform: scale(1.2);
 }
