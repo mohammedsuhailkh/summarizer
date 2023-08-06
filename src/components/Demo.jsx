@@ -98,7 +98,7 @@ const Demo = () => {
         
         {/* Display Results */}
         <div className="my-10 max-w-full justify-center items-center flex">
-          {isFetching ? (<img src={loader} alt="loader"  className="w-20 h-20 object-contain"/>)
+          {isFetching ? (<img src={loader} alt="loader"  className="w-20 h-20 object-contain mix-blend-multiply" />)
            : error ? (<p className="font-bold font-inter text-black text-center">well..Somethings Wrong  <br/>
             <span className="font-satoshi font-normal text-gray-700">{error?.data?.error}</span> </p> ) 
             : (article.summary &&  ( 
